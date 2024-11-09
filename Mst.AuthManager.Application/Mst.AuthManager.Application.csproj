@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common.Application\Common.Application.csproj" />
+    <ProjectReference Include="..\Mst.AuthManager.Domain\Mst.AuthManager.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UserAgg\Create\" />
+    <Folder Include="UserAgg\Edit\" />
+    <Folder Include="UserAgg\AddToken\" />
+    <Folder Include="UserAgg\RemoveToken\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.10.0" />
+  </ItemGroup>
+
+</Project>

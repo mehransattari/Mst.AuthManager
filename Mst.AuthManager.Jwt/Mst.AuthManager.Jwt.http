@@ -1,0 +1,6 @@
+@Mst.AuthManager.Jwt_HostAddress = http://localhost:5167
+
+GET {{Mst.AuthManager.Jwt_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
