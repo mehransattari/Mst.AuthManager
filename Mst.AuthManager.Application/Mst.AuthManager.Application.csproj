@@ -12,13 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="UserAgg\Create\" />
-    <Folder Include="UserAgg\Edit\" />
-    <Folder Include="UserAgg\AddToken\" />
-    <Folder Include="UserAgg\RemoveToken\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="FluentValidation" Version="11.10.0" />
   </ItemGroup>
 

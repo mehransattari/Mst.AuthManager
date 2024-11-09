@@ -20,6 +20,8 @@ public class User : AggregateRoot
 
     public User(string username, string passwordHash)
     {
+        Guard(username, passwordHash);
+
         Username = username;
         PasswordHash = passwordHash;
     }
@@ -28,18 +30,16 @@ public class User : AggregateRoot
 
     #region Methods
 
-    public void Guard(string userName, string password)
+    public void Guard(string userName, string passwordHash)
     {
         NullOrEmptyDomainDataException.CheckString(userName, nameof(userName));
-        NullOrEmptyDomainDataException.CheckString(password, nameof(password));
+        NullOrEmptyDomainDataException.CheckString(passwordHash, nameof(passwordHash));
     }
 
-    public void Edit(string username, string passwordHash)
+    public void Edit(string username)
     {
-        Guard(username, passwordHash);
-
+        NullOrEmptyDomainDataException.CheckString(username, nameof(username));
         Username = username;
-        PasswordHash = passwordHash;
     }
    
     public void SetRoles(List<UserRole> roles)
