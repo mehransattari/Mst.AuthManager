@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Mst.AuthManager.Application\Mst.AuthManager.Application.csproj" />
+    <ProjectReference Include="..\Mst.AuthManager.Query\Mst.AuthManager.Query.csproj" />
+  </ItemGroup>
+
 </Project>

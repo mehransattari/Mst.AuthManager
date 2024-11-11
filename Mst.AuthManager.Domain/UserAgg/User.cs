@@ -7,7 +7,7 @@ public class User : AggregateRoot
 {
     #region Properties
     public string Username { get; private set; }
-    public string PasswordHash { get; private set; }
+    public string Password { get; private set; }
     public List<UserToken> Tokens { get; } = new();
     public List<UserRole> Roles { get; } = new();
 
@@ -23,7 +23,7 @@ public class User : AggregateRoot
         Guard(username, passwordHash);
 
         Username = username;
-        PasswordHash = passwordHash;
+        Password = passwordHash;
     }
 
     #endregion
