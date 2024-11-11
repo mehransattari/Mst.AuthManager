@@ -11,7 +11,7 @@ namespace Mst.AuthManager.Infrastructure;
 
 public static class InfrastructureBootstrapper
 {
-    public static void Init(IServiceCollection services, string connectionString)
+    public static void InitInfrastructure(this IServiceCollection services, string connectionString)
     {
         services.AddTransient<IRoleRepository, RoleRepository>();
         services.AddTransient<IUserRepository, UserRepository>();

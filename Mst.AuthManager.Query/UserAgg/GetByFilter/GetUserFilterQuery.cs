@@ -1,5 +1,4 @@
 ﻿using Common.Query;
-using Common.Query.Filter;
 using Mst.AuthManager.Query.UserAgg.Dtos;
 
 namespace Mst.AuthManager.Query.UserAgg.GetByFilter;
